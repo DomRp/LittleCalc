@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c1a1a"
+    android:orientation="vertical"
+    tools:context=".PrestamoHipotecarioActivity">
+
+
+    <TextView
+        android:id="@+id/tvPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="130dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginStart="70dp"
+        android:backgroundTint="@color/colorWhite"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="121dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="234dp"
+        android:backgroundTint="@color/colorWhite"
+        android:backgroundTintMode="screen"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@android:color/holo_orange_dark" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="253dp"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:backgroundTintMode="src_over"
+        android:text="-"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@android:color/holo_orange_light"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="+"
+        android:textColorLink="@android:color/holo_orange_light"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Calcular"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@android:color/holo_orange_light"
+        android:textSize="36sp" />
+</RelativeLayout>

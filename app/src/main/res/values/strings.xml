@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LittleCalc</string>
+    <string name="welcome_to_littlecalc">Welcome to LittleCalc</string>
+    <string name="todo">TODO</string>
+    <string name="calculadora_de_prestamos_personales">Calculadora de prestamos personales</string>
+    <string name="leandro_leonardo">Leandro Leonardo</string>
+    <string name="cierre_prestamos">CIERRE PRESTAMOS</string>
+    <string name="personales">PERSONALES</string>
+    <string name="veh_culos">VEHÍCULOS</string>
+    <string name="hipotecarios">HIPOTECARIOS</string>
+    <string name="calculadora_de_pr_stamos">Calculadora de préstamos</string>
+    <string name="seleccione_una_de_las_siguientes_opciones">Seleccione una de las siguientes opciones</string>
+    <string name="calculadora_de_prestamos">Calculadora de prestamos</string>
+    <string name="copyright_leandro_leonardo">Copyright Leandro Leonardo</string>
+</resources>

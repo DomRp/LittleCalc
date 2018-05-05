@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/comingsoon"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnCierrePrestamo"
+        android:layout_width="134dp"
+        android:layout_height="114dp"
+        android:layout_alignStart="@+id/btnVehiculo"
+        android:layout_alignTop="@+id/btnPersonal"
+        android:layout_gravity="center"
+        android:background="@drawable/certificates_icon"
+        android:onClick="llamarCierrePrestamoActivity"
+        app:layout_constraintBottom_toTopOf="@+id/tvCierrePrestamo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVehiculo"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnHipotecario"
+        android:layout_gravity="center"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/cars_icon"
+        android:onClick="llamarPrestamoVehiculoActivity"
+        app:layout_constraintBottom_toTopOf="@+id/tvVehiculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHipotecario" />
+
+    <TextView
+        android:id="@+id/tvCierrePrestamo"
+        android:layout_width="153dp"
+        android:layout_height="56dp"
+        android:layout_alignStart="@+id/btnCierrePrestamo"
+        android:layout_below="@+id/btnCierrePrestamo"
+        android:layout_gravity="center"
+        android:onClick="llamarCierrePrestamoActivity"
+        android:text="@string/cierre_prestamos"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPersonal" />
+
+    <TextView
+        android:id="@+id/tvVehiculo"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:layout_alignStart="@+id/btnVehiculo"
+        android:layout_below="@+id/btnVehiculo"
+        android:layout_gravity="center"
+        android:onClick="llamarPrestamoVehiculoActivity"
+        android:text="@string/veh_culos"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCierrePrestamo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvHipotecario" />
+
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/seleccione_una_de_las_siguientes_opciones"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnVehiculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tvh3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/calculadora_de_pr_stamos"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        tools:ignore="MissingConstraints,RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/calculadora_de_prestamos"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RelativeOverlap"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tvCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvh3"
+        android:layout_marginStart="-123dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/copyright_leandro_leonardo"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RelativeOverlap"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tvHipotecario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnHipotecario"
+        android:layout_below="@+id/btnVehiculo"
+        android:layout_gravity="center"
+        android:onClick="llamarPrestamoHipotecarioActivity"
+        android:text="@string/hipotecarios"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnPersonal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnHipotecario"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/houses_icon"
+        android:onClick="llamarPrestamoHipotecarioActivity"
+        app:layout_constraintBottom_toTopOf="@+id/tvHipotecario"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCierrePrestamo"
+        android:layout_alignStart="@+id/btnPersonal"
+        android:layout_gravity="center"
+        android:onClick="llamarPrestamoPersonalActivity"
+        android:text="@string/personales"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvCierrePrestamo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPersonal"
+        android:layout_width="126dp"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvHipotecario"
+        android:layout_gravity="center"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/personal_loans_icon"
+        android:onClick="llamarPrestamoPersonalActivity"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonal"
+        app:layout_constraintEnd_toStartOf="@+id/btnCierrePrestamo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivAppLogoMain"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/applogo"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
